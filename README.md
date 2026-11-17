@@ -1,6 +1,6 @@
 # M365Connect – Releases
 
-Dieses Repository enthält ausschliesslich die Release-Builds von **M365Connect** (Computer Trend IT-Solution AG).
+Dieses Repository enthält ausschliesslich die Release-Builds von **M365Connect** (Computer Trend IT-Solution GmbH).
 Der Quellcode ist nicht öffentlich.
 
 ## Downloads
