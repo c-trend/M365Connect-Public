@@ -1,6 +1,12 @@
 # Änderungen
 
-Alle Versionen 0.x sind Beta-Versionen. Pakete und Prüfdateien: [Releases](https://github.com/c-trend/M365Connect-Public/releases).
+Ab 0.3.4 sind Versionen regulär; Beta sind nur noch Versionen mit Zusatz (z. B. `1.2.0-beta.1`). Frühere 0.x-Versionen waren Beta. Pakete und Prüfdateien: [Releases](https://github.com/c-trend/M365Connect-Public/releases).
+
+## 0.3.4 – 19.11.2026
+
+- Erste reguläre Version (nicht mehr Beta). Neue Installationen beziehen standardmässig nur reguläre Versionen.
+- Lizenzbedingungen und Hinweise zu Komponenten Dritter liegen dem Paket bei.
+- Neutrale Beispiele für Netze und Server in Oberfläche und Setup-Skript.
 
 ## 0.3.3 – 19.11.2026
 

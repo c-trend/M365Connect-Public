@@ -46,7 +46,7 @@ Ist der Plan falsch, die Ursache beheben (z. B. Einstellungen in Cobra CRM) und 
 - **Jetzt installieren** lädt das Paket, prüft Prüfsumme und Signatur und übergibt an das Update-Programm. Die
   Oberfläche ist dabei etwa eine Minute nicht erreichbar.
 - **Updates automatisch installieren** installiert nur, wenn gerade kein Sync läuft.
-- **Beta-Versionen einbeziehen**: Solange es nur 0.x-Versionen gibt, sind alle Versionen Beta.
+- **Beta-Versionen einbeziehen**: zusätzlich Versionen mit Zusatz (z. B. `1.2.0-beta.1`) anbieten. Standard aus.
 
 Das Update-Programm sichert vor dem Tausch Programm und Datenbank. Startet die neue Version nicht innerhalb von drei
 Minuten sauber, werden **Programm und Datenbank automatisch zurückgespielt**. Das Ergebnis erscheint unter
