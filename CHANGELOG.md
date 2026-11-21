@@ -2,6 +2,13 @@
 
 Ab 0.3.4 sind Versionen regulär; Beta sind nur noch Versionen mit Zusatz (z. B. `1.2.0-beta.1`). Frühere 0.x-Versionen waren Beta. Pakete und Prüfdateien: [Releases](https://github.com/c-trend/M365Connect-Public/releases).
 
+## 0.4.0 – 21.11.2026
+
+- **Anruferkennung (Cobra):** Felder werden mit ihren Cobra-Bezeichnungen im Klartext angezeigt.
+- Neue Seite **«Feldzuordnung & Filter»**: Felder und Filter lassen sich ohne erneute Einrichtung anpassen; der Filter zeigt die echte Gesamtzahl der Adressen und kennzeichnet, wenn nur die häufigsten Werte aufgeführt sind.
+- Einrichtung des Cobra-Leselogins und der M365-App gehärtet: Rückbau bei Fehlern, klare Meldung, wenn der Ausgang unklar ist.
+- Schutz vor Kontosperre: höchstens ein Cobra-Anmeldeversuch gleichzeitig, auch zwischen Dienst und Kommandozeile. Nach einer abgelehnten Anmeldung bleiben automatische Läufe gesperrt, bis neue Zugangsdaten gespeichert sind.
+
 ## 0.3.4 – 19.11.2026
 
 - Erste reguläre Version (nicht mehr Beta). Neue Installationen beziehen standardmässig nur reguläre Versionen.
