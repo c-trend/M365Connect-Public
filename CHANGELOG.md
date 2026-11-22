@@ -2,6 +2,15 @@
 
 Ab 0.3.4 sind Versionen regulär; Beta sind nur noch Versionen mit Zusatz (z. B. `1.2.0-beta.1`). Frühere 0.x-Versionen waren Beta. Pakete und Prüfdateien: [Releases](https://github.com/c-trend/M365Connect-Public/releases).
 
+## 0.5.0 – 22.11.2026
+
+- **Neuer Anzeigename «CT 365 Connect».** Dienst, Programm- und Datenordner, Firewall-Regel und Zertifikate behalten ihre bisherigen Namen; ein Update ändert an der Installation nichts.
+- **Übrige Kontakte kategorisieren (Opt-in):** Unter Sync → Einstellungen → «Kontakte im Postfach» lassen sich die übrigen, nicht synchronisierten Kontakte mit einer eigenen Kategorie (Standard «Eigene Kontakte») versehen. Geändert wird ausschliesslich die Kategorie; standardmässig aus. Fehler beim Kategorisieren markieren das Postfach als «Teilweise».
+- **Microsoft 365 → App überschreiben / Zertifikat erneuern:** Eine vorhandene App-Registrierung kann mit neuem Zertifikat übernommen werden. Dabei werden früher zusätzlich erteilte Anwendungsberechtigungen widerrufen; scheitert das, bleibt das bisherige Zertifikat aktiv.
+- **⚙ Einstellungen** oben rechts fasst Einrichtung und System zusammen.
+- **Port der Weboberfläche änderbar** (Einstellungen → Allgemein, Standard 8443). Wirkt nach dem Neustart des Dienstes; die Firewall-Regel des Fernzugriffs folgt erst, wenn der neue Port tatsächlich gebunden ist. Updates prüfen den neu gespeicherten Port.
+- Beim Start gleicht der Dienst die Firewall-Regel ab: fehlende oder deaktivierte Regel bei eingeschaltetem Fernzugriff wird neu gesetzt, eine verbliebene Regel bei ausgeschaltetem Fernzugriff entfernt.
+
 ## 0.4.1 – 22.11.2026
 
 - **Cobra-Leselogin:** Scheitert die Einrichtung, entfernt der Assistent wieder, was er selbst angelegt hat (neue Leserechte, neuer Datenbankbenutzer, neues Login). Lässt sich das nicht sicher feststellen, nennt die Meldung die Befehle zum manuellen Entfernen.
