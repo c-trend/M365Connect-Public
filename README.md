@@ -1,6 +1,6 @@
 <div align="center">
 
-# CT M365 Connect
+# CT 365 Connect
 
 **Kontakte aus dem CRM als Anruferkennung in Microsoft Teams**
 
@@ -13,16 +13,16 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/00-dashboard-dark.png">
-  <img alt="Dashboard von CT M365 Connect" src="docs/images/01-dashboard.png">
+  <img alt="Dashboard von CT 365 Connect" src="docs/images/01-dashboard.png">
 </picture>
 
-CT M365 Connect liest Adressen aus dem CRM und legt sie als persönliche Kontakte in den gewählten Postfächern von
+CT 365 Connect liest Adressen aus dem CRM und legt sie als persönliche Kontakte in den gewählten Postfächern von
 Microsoft 365 ab. Ruft eine Kundin oder ein Kunde an, zeigt Microsoft Teams sofort Firma und Namen statt nur der
 Nummer. Das Programm läuft als Windows-Dienst beim Kunden und wird über eine Weboberfläche bedient.
 
 > [!NOTE]
 > Dieses Repository enthält nur die **signierten Release-Pakete** und die Anwenderdokumentation. Der Quellcode ist
-> nicht öffentlich. CT M365 Connect wird von der Computer Trend IT-Solution GmbH für ihre Kundinnen und Kunden
+> nicht öffentlich. CT 365 Connect wird von der Computer Trend IT-Solution GmbH für ihre Kundinnen und Kunden
 > installiert und betreut.
 
 ## Funktionen
