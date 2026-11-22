@@ -29,18 +29,18 @@ Würde ein Lauf mehr als den eingestellten Anteil der verwalteten Kontakte lösc
 ab 5 Kontakten), hält das Programm alle Löschungen und Ersetzungen zurück. Neue Kontakte werden trotzdem angelegt.
 Typische Ursachen sind ein geänderter Adressfilter, eine geänderte Feldzuordnung oder ein Problem in der Quelle.
 
-1. **Synchronisation → Dry Run** ausführen und die Tabelle prüfen.
+1. **Synchronisation → Trockenlauf** ausführen und die Tabelle prüfen.
 2. Ist der Plan richtig: **Genau diesen Plan freigeben**. Die Freigabe gilt nur für genau diesen Plan und
    24 Stunden; ändert sich der Plan, braucht es eine neue Freigabe.
 3. Der nächste Lauf führt die Löschungen aus.
 
-Ist der Plan falsch, die Ursache beheben (z. B. Einstellungen in Cobra CRM) und erneut einen Dry Run ausführen.
+Ist der Plan falsch, die Ursache beheben (z. B. Einstellungen in Cobra CRM) und erneut einen Trockenlauf ausführen.
 
 ## Updates
 
 ![Updates](images/09-updates.png)
 
-**System → Updates** zeigt die installierte und die verfügbare Version.
+**Einstellungen → Updates** zeigt die installierte und die verfügbare Version.
 
 - **Nach Updates suchen** fragt die Releases dieses Repositorys ab. Automatisch alle 6 Stunden, wenn eingeschaltet.
 - **Jetzt installieren** lädt das Paket, prüft Prüfsumme und Signatur und übergibt an das Update-Programm. Die
@@ -57,7 +57,7 @@ Minuten sauber, werden **Programm und Datenbank automatisch zurückgespielt**. D
 ![Benutzer](images/11-benutzer.png)
 
 Anmelden darf sich nur, wer Mitglied der lokalen Windows-Gruppe **«CTM365Connect Admins»** ist – direkt oder über
-eine AD-Gruppe. Unter **System → Benutzer** lassen sich Konten aufnehmen und entfernen:
+eine AD-Gruppe. Unter **Einstellungen → Benutzer** lassen sich Konten aufnehmen und entfernen:
 
 - Eingabe als `DOMÄNE\benutzer`, `benutzer@domäne.ch` oder AD-Gruppe → **Prüfen** → **Hinzufügen**.
 - Bei Konten, die aus dem AD nach Entra ID synchronisiert werden, ist das **AD-Konto** einzutragen, nicht `AzureAD\…`.
@@ -76,11 +76,11 @@ net localgroup "CTM365Connect Admins" DOMÄNE\benutzer /add
 ![Fernzugriff](images/10-fernzugriff.png)
 
 Standardmässig ist die Oberfläche nur direkt auf dem Server erreichbar (`https://localhost:8443/`). Unter
-**System → Fernzugriff** lässt sie sich für freigegebene **private** Netze öffnen. Das Programm pflegt dazu
+**Einstellungen → Fernzugriff** lässt sie sich für freigegebene **private** Netze öffnen. Das Programm pflegt dazu
 automatisch eine Windows-Firewall-Regel und prüft die Adresse jedes Besuchers zusätzlich selbst.
 
 - Netze in CIDR-Schreibweise angeben, z. B. `192.168.1.0/24` (ganzes Netz) oder `192.168.1.25/32` (ein Gerät).
-- Aufruf über den **Servernamen** (z. B. `https://server.kunde.local:8443/`) – unter **System → Systemstatus**
+- Aufruf über den **Servernamen** (z. B. `https://server.kunde.local:8443/`) – unter **Einstellungen → Allgemein**
   steht die genaue Adresse.
 - Aus dem Netz ist nur die **Kerberos**-Anmeldung zugelassen. Geräte ohne Verbindung zum Domänencontroller
   (z. B. nur in Entra ID eingebunden) brauchen den Schalter «NTLM-Anmeldung aus dem Netz erlauben»; dann nur
@@ -101,7 +101,7 @@ automatisch eine Windows-Firewall-Regel und prüft die Adresse jedes Besuchers z
 
 Das Datenverzeichnis ist nur für SYSTEM und Administratoren zugänglich. Warnungen und Fehler stehen zusätzlich in der
 Windows-Ereignisanzeige unter **Anwendung**, Quelle «CT M365 Connect» (siehe [Überwachung](ueberwachung.md)).
-**System → Logs** zeigt die letzten Einträge in der Oberfläche.
+**Einstellungen → Logs** zeigt die letzten Einträge in der Oberfläche.
 
 > [!NOTE]
 > Die Datenbank und die Zugangsdaten sind an den Server gebunden (DPAPI). Bei einem Serverwechsel das Programm auf
@@ -153,4 +153,4 @@ Eigenes Zertifikat statt des selbstsignierten: Zertifikat in `LocalMachine\My` i
 | Postfach mit Status «Fehler» | Postfach nicht erreichbar (z. B. Lizenz entfernt). Meldung unter Synchronisation → Postfächer prüfen. |
 | Teams zeigt keinen Namen | Zweimal anrufen (Zwischenspeicher von Teams). Prüfen, ob die Nummer im Kontakt mit Landesvorwahl gespeichert ist. |
 | Update fehlgeschlagen | Die vorherige Version läuft wieder. Details in `update\updater.log`. |
-| Zertifikat der App läuft ab (nach 10 Jahren) | Einrichtung → Microsoft 365 erneut ausführen und die alte App-Registrierung löschen. |
+| Zertifikat der App läuft ab (nach 10 Jahren) | Microsoft-365-Assistent (Einstellungen → Verbindungen) erneut ausführen und die alte App-Registrierung löschen. |

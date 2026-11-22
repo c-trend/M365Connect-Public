@@ -31,8 +31,8 @@ Nummer. Das Programm läuft als Windows-Dienst beim Kunden und wird über eine W
 |---|---|
 | **Anruferkennung in Teams** | Ein persönlicher Kontakt je Person bzw. Firmenzentrale im Standard-Kontaktordner – genau dort, wo Teams eingehende Nummern auflöst. |
 | **CRM strikt lesend** | Cobra CRM wird über ein eigenes Leselogin mit Leserecht auf genau eine Tabelle gelesen. Im CRM wird nie etwas geändert. |
-| **Nur eigene Kontakte** | Angefasst werden ausschliesslich Kontakte mit der eigenen Kategorie. Private Kontakte der Benutzer bleiben unberührt. |
-| **Dry Run und Löschschutz** | Jeder Lauf lässt sich vorher ohne Schreiben prüfen. Grosse Löschmengen werden zurückgehalten, bis sie ausdrücklich freigegeben sind. |
+| **Nur eigene Kontakte** | Angelegt, geändert und gelöscht werden ausschliesslich die selbst angelegten Kontakte mit der eigenen Kategorie. Private Kontakte der Benutzer bleiben unberührt – ausser sie sollen per Opt-in-Schalter eine eigene Kategorie erhalten. |
+| **Trockenlauf und Löschschutz** | Jeder Lauf lässt sich vorher ohne Schreiben prüfen. Grosse Löschmengen werden zurückgehalten, bis sie ausdrücklich freigegeben sind. |
 | **Zeitplan** | Automatischer Abgleich im Intervall und ein täglicher Vollabgleich. Unveränderte Postfächer werden übersprungen. |
 | **Postfachauswahl** | Alle Postfächer, alle ausser einzelnen oder nur gewählte – neue Benutzer auf Wunsch automatisch. |
 | **Einrichtungsassistenten** | App-Registrierung in Entra ID mit Zertifikat und Cobra-Leselogin werden geführt eingerichtet. |
@@ -44,7 +44,7 @@ Nummer. Das Programm läuft als Windows-Dienst beim Kunden und wird über eine W
 
 <table>
   <tr>
-    <td width="50%"><a href="docs/images/02-synchronisation.png"><img src="docs/images/02-synchronisation.png" alt="Synchronisation"></a><br><sub><b>Synchronisation</b> – Zeitplan, Dry Run und Verlauf aller Läufe</sub></td>
+    <td width="50%"><a href="docs/images/02-synchronisation.png"><img src="docs/images/02-synchronisation.png" alt="Synchronisation"></a><br><sub><b>Synchronisation</b> – Zeitplan, Trockenlauf und Verlauf aller Läufe</sub></td>
     <td width="50%"><a href="docs/images/03-sync-einstellungen.png"><img src="docs/images/03-sync-einstellungen.png" alt="Einstellungen"></a><br><sub><b>Einstellungen</b> – Intervall, Kategorie, Anzeigename, Rufnummern, Löschschwelle</sub></td>
   </tr>
   <tr>

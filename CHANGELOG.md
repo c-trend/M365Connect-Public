@@ -2,6 +2,14 @@
 
 Ab 0.3.4 sind Versionen regulär; Beta sind nur noch Versionen mit Zusatz (z. B. `1.2.0-beta.1`). Frühere 0.x-Versionen waren Beta. Pakete und Prüfdateien: [Releases](https://github.com/c-trend/M365Connect-Public/releases).
 
+## 0.5.1 – 22.11.2026
+
+- **Oberfläche:** Kachelraster fest zweispaltig mit gleich hohen Kacheln – auf breiten Bildschirmen keine leere dritte Spalte mehr (Dashboard, Cobra CRM, Microsoft 365, Einstellungen). Unter 900 px eine Spalte.
+- **Sync → Einstellungen** neu angeordnet: Zeitplan | Schutz, Sync-Kontakte | Übrige Kontakte (eigene Kachel), Rufnummern über die ganze Breite.
+- Formularfelder in Cobra CRM → Feldzuordnung ohne leere Spalten; die Log-Tabelle lässt sich auf schmalen Bildschirmen seitlich scrollen.
+- **Texte:** «Trockenlauf» statt «Dry Run», Meldungen bei Verbindungsabbruch auf Deutsch, einheitliche Begriffe (Einmal-Setup-Token, Zertifikatsspeicher, Prüfung) und korrekte Menüpfade («Einstellungen → …»).
+- Dokumentation: Menüpfade nachgeführt, Sicherheitsgrundsätze um den Opt-in-Schalter «Übrige Kontakte kategorisieren» ergänzt, Screenshot Sync-Einstellungen neu.
+
 ## 0.5.0 – 22.11.2026
 
 - **Neuer Anzeigename «CT 365 Connect».** Dienst, Programm- und Datenordner, Firewall-Regel und Zertifikate behalten ihre bisherigen Namen; ein Update ändert an der Installation nichts.

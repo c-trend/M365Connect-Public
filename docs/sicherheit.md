@@ -5,7 +5,10 @@
 - **Quellen werden nur gelesen.** Im CRM ändert CT M365 Connect nichts. Die einzige Ausnahme ist der
   Einrichtungsassistent, der auf Klick ein eigenes Leselogin anlegt.
 - **In Microsoft 365 nur eigene Daten.** Geschrieben werden ausschliesslich persönliche Kontakte mit der eigenen
-  Kategorie, in den gewählten Postfächern. Andere Kontakte werden nie verändert oder gelöscht.
+  Kategorie, in den gewählten Postfächern. Andere Kontakte werden nicht gelöscht und inhaltlich nie verändert.
+  Einzige Ausnahme ist der standardmässig ausgeschaltete Schalter «Übrige Kontakte kategorisieren»: Er ergänzt
+  bei diesen Kontakten nur eine zusätzliche Kategorie (Namen, Nummern und übrige Kategorien bleiben); beim
+  Ausschalten oder Rückbau bleibt diese Kategorie stehen.
 - **Kein stilles Löschen.** Ist der Abruf aus der Quelle unvollständig, wird nichts gelöscht. Grosse Löschmengen
   brauchen eine ausdrückliche Freigabe genau dieses Plans.
 
@@ -41,7 +44,7 @@ kann dies in Exchange Online über RBAC für Anwendungen tun.
   Prüfung im Programm. Aus dem Netz standardmässig nur Kerberos.
 - Passworteingaben und die Einrichtung von Microsoft 365 sind nur direkt auf dem Server möglich, solange kein
   Zertifikat einer vertrauenswürdigen Zertifizierungsstelle eingerichtet ist.
-- Alle Änderungen stehen im Auditlog unter **System → Systemstatus**.
+- Alle Änderungen stehen im Auditlog unter **Einstellungen → Allgemein**.
 
 ## Schutz gespeicherter Daten
 

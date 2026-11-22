@@ -80,7 +80,7 @@ Weitere Aufrufe des Skripts:
 
 ## 4. Microsoft 365 verbinden
 
-Menü **Einrichtung → Microsoft 365**:
+**Einstellungen (⚙) → Verbindungen → Microsoft 365**:
 
 1. **Tenant**: leer lassen, wenn das Admin-Konto zum Kundentenant gehört. Bei GDAP- oder Gastkonten den Tenant des
    Kunden eintragen, z. B. `kunde.onmicrosoft.com`.
@@ -95,7 +95,7 @@ Menü **Einrichtung → Microsoft 365**:
 
 ## 5. Cobra CRM verbinden
 
-Menü **Einrichtung → Cobra CRM**. Der Assistent führt in sieben Schritten durch die Verbindung:
+**Einstellungen (⚙) → Verbindungen → Cobra CRM**. Der Assistent führt in sieben Schritten durch die Verbindung:
 
 1. **SQL-Server**: Name oder Adresse, bei Bedarf Port oder benannte Instanz (z. B. `SRV01\COBRA`).
 2. **Anmeldung für die Einrichtung**: `sa` oder «Windows-Anmeldung mit anderem Konto» (DOMÄNE\benutzer und
@@ -142,7 +142,7 @@ Menü **Einrichtung → Cobra CRM**. Der Assistent führt in sieben Schritten du
 
 ## 7. Erster Lauf und Testanruf
 
-1. **Synchronisation → Dry Run**: zeigt je Postfach, was angelegt, ersetzt und gelöscht würde – ohne zu schreiben.
+1. **Synchronisation → Trockenlauf**: zeigt je Postfach, was angelegt, ersetzt und gelöscht würde – ohne zu schreiben.
 2. **Jetzt synchronisieren …** → **Ja, ausführen**.
 3. In Outlook beim Testbenutzer unter Kontakte prüfen: Die Kontakte tragen die Kategorie «Cobra Sync».
 4. Von einer Nummer, die im CRM erfasst ist, **zweimal** auf die Teams-Nummer des Testbenutzers anrufen. Teams
@@ -162,5 +162,5 @@ Für die Überwachung durch ein RMM-Werkzeug siehe [Überwachung](ueberwachung.m
 
 ## 9. Optional: Zugriff aus dem Netz und weitere Benutzer
 
-- **System → Fernzugriff**: Oberfläche aus freigegebenen privaten Netzen erreichbar machen (siehe [Betrieb](betrieb.md#fernzugriff)).
-- **System → Benutzer**: weitere Techniker in die Admin-Gruppe aufnehmen (siehe [Betrieb](betrieb.md#benutzer)).
+- **Einstellungen → Fernzugriff**: Oberfläche aus freigegebenen privaten Netzen erreichbar machen (siehe [Betrieb](betrieb.md#fernzugriff)).
+- **Einstellungen → Benutzer**: weitere Techniker in die Admin-Gruppe aufnehmen (siehe [Betrieb](betrieb.md#benutzer)).
