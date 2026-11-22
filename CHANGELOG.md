@@ -2,6 +2,12 @@
 
 Ab 0.3.4 sind Versionen regulär; Beta sind nur noch Versionen mit Zusatz (z. B. `1.2.0-beta.1`). Frühere 0.x-Versionen waren Beta. Pakete und Prüfdateien: [Releases](https://github.com/c-trend/M365Connect-Public/releases).
 
+## 0.4.1 – 22.11.2026
+
+- **Cobra-Leselogin:** Scheitert die Einrichtung, entfernt der Assistent wieder, was er selbst angelegt hat (neue Leserechte, neuer Datenbankbenutzer, neues Login). Lässt sich das nicht sicher feststellen, nennt die Meldung die Befehle zum manuellen Entfernen.
+- Die SQL-Server-Hilfsobjekte für Datenbankdiagramme (`sp_helpdiagrams` u. ä.), die über `public` ausführbar sein können, werden für das Leselogin gesperrt. Bisher brach die Einrichtung in diesem Fall ab.
+- **Einrichtung → Cobra CRM** umfasst nur noch Verbindung und Leselogin (vier Schritte) und verweist am Ende auf **Cobra CRM → Feldzuordnung & Filter**. Feldzuordnung, Adressfilter und Vorschau gibt es nur noch dort.
+
 ## 0.4.0 – 21.11.2026
 
 - **Anruferkennung (Cobra):** Felder werden mit ihren Cobra-Bezeichnungen im Klartext angezeigt.
