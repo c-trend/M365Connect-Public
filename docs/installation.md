@@ -80,6 +80,11 @@ Weitere Aufrufe des Skripts:
 
 ## 4. Microsoft 365 verbinden
 
+Beide Verbindungen werden über das Zahnrad oben rechts eingerichtet: **Einstellungen (⚙) → Verbindungen** zeigt den
+Stand der Module und führt zu den Assistenten.
+
+![Einstellungen – Verbindungen](images/07-einstellungen.png)
+
 **Einstellungen (⚙) → Verbindungen → Microsoft 365**:
 
 1. **Tenant**: leer lassen, wenn das Admin-Konto zum Kundentenant gehört. Bei GDAP- oder Gastkonten den Tenant des
@@ -95,7 +100,7 @@ Weitere Aufrufe des Skripts:
 
 ## 5. Cobra CRM verbinden
 
-**Einstellungen (⚙) → Verbindungen → Cobra CRM**. Der Assistent führt in sieben Schritten durch die Verbindung:
+**Einstellungen (⚙) → Verbindungen → Cobra CRM**. Der Assistent richtet in vier Schritten Verbindung und Leselogin ein:
 
 1. **SQL-Server**: Name oder Adresse, bei Bedarf Port oder benannte Instanz (z. B. `SRV01\COBRA`).
 2. **Anmeldung für die Einrichtung**: `sa` oder «Windows-Anmeldung mit anderem Konto» (DOMÄNE\benutzer und
@@ -104,11 +109,19 @@ Weitere Aufrufe des Skripts:
 3. **Datenbank und Tabelle**: Cobra-Datenbank und Adresstabelle (in der Regel `dbo.ADDRESSES`) aus den Listen wählen.
 4. **Leselogin**: Namen belassen (`m365connect_read`) → **Leselogin anlegen und prüfen**. Das Login erhält ein
    Zufallspasswort und nur Leserecht auf die gewählte Tabelle.
-5. **Feldzuordnung**: Firma, Vorname, Nachname, Telefonnummern und optional die Adresse. Mit
+
+Danach **Weiter zu Feldzuordnung & Filter** bzw. **Cobra CRM → Feldzuordnung & Filter**:
+
+1. **Feldzuordnung**: Firma, Vorname, Nachname, Telefonnummern und optional die Adresse. Mit
    **Beispielzeilen anzeigen** prüfen.
-6. **Adressfilter**: z. B. nur Kunden, oder Privatadressen, Bewerber und Mitarbeitende ausschliessen. Die Anzahl
+2. **Adressfilter**: z. B. nur Kunden, oder Privatadressen, Bewerber und Mitarbeitende ausschliessen. Die Anzahl
    Adressen wird laufend angezeigt.
-7. **Vorschau**: Stichproben der entstehenden Kontakte prüfen → **Fertig**.
+3. **Vorschau**: Stichproben der entstehenden Kontakte prüfen → **Fertig**.
+
+![Cobra CRM – Feldzuordnung & Filter](images/12-cobra-zuordnung.png)
+
+**Cobra CRM → Übersicht** zeigt anschliessend Verbindung, Auswahl und Zuordnung; **Vorschau erstellen** zeigt
+jederzeit, welche Kontakte entstehen würden.
 
 ![Cobra CRM verbunden](images/05-cobra.png)
 

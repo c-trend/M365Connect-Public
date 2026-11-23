@@ -45,14 +45,14 @@ Nummer. Das Programm läuft als Windows-Dienst beim Kunden und wird über eine W
 <table>
   <tr>
     <td width="50%"><a href="docs/images/02-synchronisation.png"><img src="docs/images/02-synchronisation.png" alt="Synchronisation"></a><br><sub><b>Synchronisation</b> – Zeitplan, Trockenlauf und Verlauf aller Läufe</sub></td>
-    <td width="50%"><a href="docs/images/03-sync-einstellungen.png"><img src="docs/images/03-sync-einstellungen.png" alt="Einstellungen"></a><br><sub><b>Einstellungen</b> – Intervall, Kategorie, Anzeigename, Rufnummern, Löschschwelle</sub></td>
+    <td width="50%"><a href="docs/images/03-sync-einstellungen.png"><img src="docs/images/03-sync-einstellungen.png" alt="Sync-Einstellungen"></a><br><sub><b>Sync-Einstellungen</b> – Zeitplan, Löschschutz, Kategorie, Anzeigename, Rufnummern</sub></td>
   </tr>
   <tr>
     <td><a href="docs/images/04-postfaecher.png"><img src="docs/images/04-postfaecher.png" alt="Postfächer"></a><br><sub><b>Postfächer</b> – Auswahl und Stand je Postfach</sub></td>
-    <td><a href="docs/images/07-einrichtung.png"><img src="docs/images/07-einrichtung.png" alt="Einrichtung"></a><br><sub><b>Einrichtung</b> – Module und Assistenten</sub></td>
+    <td><a href="docs/images/07-einstellungen.png"><img src="docs/images/07-einstellungen.png" alt="Einstellungen"></a><br><sub><b>Einstellungen (⚙)</b> – Verbindungen zu Microsoft 365 und Cobra CRM</sub></td>
   </tr>
   <tr>
-    <td><a href="docs/images/05-cobra.png"><img src="docs/images/05-cobra.png" alt="Cobra CRM"></a><br><sub><b>Cobra CRM</b> – Verbindung, Adressauswahl und Feldzuordnung</sub></td>
+    <td><a href="docs/images/05-cobra.png"><img src="docs/images/05-cobra.png" alt="Cobra CRM"></a><br><sub><b>Cobra CRM</b> – Verbindung, Adressauswahl, Feldzuordnung und Vorschau</sub></td>
     <td><a href="docs/images/06-microsoft365.png"><img src="docs/images/06-microsoft365.png" alt="Microsoft 365"></a><br><sub><b>Microsoft 365</b> – App-Registrierung mit Zertifikat</sub></td>
   </tr>
   <tr>

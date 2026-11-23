@@ -109,6 +109,11 @@ Windows-Ereignisanzeige unter **Anwendung**, Quelle «CT M365 Connect» (siehe [
 
 ## Konfiguration
 
+![Allgemein](images/08-allgemein.png)
+
+**Einstellungen → Allgemein** zeigt Version, Betriebsart, Datenverzeichnis, Adressen und Auditlog. Dort lässt sich
+auch der **Port der Oberfläche** ändern (Standard 8443); er gilt nach dem Neustart des Dienstes.
+
 Die Grundeinstellungen stehen in `appsettings.json` im Programmverzeichnis. Diese Datei wird bei jedem Update
 ersetzt. Abweichende Werte deshalb in `appsettings.Production.json` daneben eintragen – nur die geänderten Einträge:
 
