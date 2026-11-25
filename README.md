@@ -52,7 +52,7 @@ Nummer. Das Programm läuft als Windows-Dienst beim Kunden und wird über eine W
     <td><a href="docs/images/07-einstellungen.png"><img src="docs/images/07-einstellungen.png" alt="Einstellungen"></a><br><sub><b>Einstellungen (⚙)</b> – Verbindungen zu Microsoft 365 und Cobra CRM</sub></td>
   </tr>
   <tr>
-    <td><a href="docs/images/05-cobra.png"><img src="docs/images/05-cobra.png" alt="Cobra CRM"></a><br><sub><b>Cobra CRM</b> – Verbindung, Adressauswahl, Feldzuordnung und Vorschau</sub></td>
+    <td><a href="docs/images/05-cobra.png"><img src="docs/images/05-cobra.png" alt="Cobra CRM"></a><br><sub><b>Cobra CRM</b> – Verbindung, Adressfilter mit Regeln, Feldzuordnung und Vorschau</sub></td>
     <td><a href="docs/images/06-microsoft365.png"><img src="docs/images/06-microsoft365.png" alt="Microsoft 365"></a><br><sub><b>Microsoft 365</b> – App-Registrierung mit Zertifikat</sub></td>
   </tr>
   <tr>

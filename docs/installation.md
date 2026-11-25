@@ -114,8 +114,22 @@ Danach **Weiter zu Feldzuordnung & Filter** bzw. **Cobra CRM → Feldzuordnung &
 
 1. **Feldzuordnung**: Firma, Vorname, Nachname, Telefonnummern und optional die Adresse. Mit
    **Beispielzeilen anzeigen** prüfen.
-2. **Adressfilter**: z. B. nur Kunden, oder Privatadressen, Bewerber und Mitarbeitende ausschliessen. Die Anzahl
-   Adressen wird laufend angezeigt.
+2. **Adressfilter** (ab 0.6.0 als Regeleditor) in zwei Blöcken:
+   - **Einschliessen** – nur Adressen, auf die diese Regeln zutreffen (leer = alle Adressen), z. B. Adresstyp
+     «Kunde» oder «Lieferant».
+   - **Ausschliessen** – trifft eine dieser Regeln zu, wird die Adresse nie synchronisiert, z. B. «inaktiv ist
+     gesetzt». Ausschliessen gewinnt immer.
+
+   Regeln lassen sich in Gruppen mit **alle Bedingungen (UND)** oder **mindestens eine (ODER)** zusammenfassen und
+   verschachteln. Bedingungen gibt es für Text und Auswahllisten (mit Werteliste und Anzahl), Zahlen, Datum (fest oder
+   relativ, z. B. «in den letzten 3 Jahren») und Ja/Nein-Felder; für Spezialfälle eine **eigene SQL-Bedingung (ohne
+   WHERE)**. Verneinte Vergleiche («ist nicht», «enthält nicht») treffen auch auf leere Felder zu. Über dem Editor
+   steht der Filter als lesbarer Satz. **Treffer zählen** zeigt die Anzahl je Regel und Gruppe sowie, wie viele
+   Adressen insgesamt synchronisiert werden.
+
+   Beim Update von einer früheren Version wird der bisherige Filter (Adresstyp, Ausschluss-Kennzeichen, zusätzlicher
+   SQL-Filter) unverändert übernommen und im Editor als Regeln angezeigt. Fallen durch neue Regeln viele Kontakte weg,
+   verlangt der Löschschutz beim nächsten Lauf eine Freigabe.
 3. **Vorschau**: Stichproben der entstehenden Kontakte prüfen → **Fertig**.
 
 ![Cobra CRM – Feldzuordnung & Filter](images/12-cobra-zuordnung.png)

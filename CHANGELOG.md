@@ -2,6 +2,14 @@
 
 Ab 0.3.4 sind Versionen regulär; Beta sind nur noch Versionen mit Zusatz (z. B. `1.2.0-beta.1`). Frühere 0.x-Versionen waren Beta. Pakete und Prüfdateien: [Releases](https://github.com/c-trend/M365Connect-Public/releases).
 
+## 0.6.0 – 25.11.2026
+
+- **Adressfilter als Regeleditor** (Cobra CRM → Feldzuordnung & Filter): zwei Blöcke **Einschliessen** und **Ausschliessen** (Ausschliessen gewinnt immer), verschachtelbare Gruppen mit UND/ODER, Bedingungen für Text/Auswahl, Zahl, Datum (fest oder relativ, bei jedem Lauf neu berechnet) und Ja/Nein sowie eigene SQL-Bedingungen. Der Filter steht als lesbarer Satz über dem Editor und in der Cobra-Übersicht.
+- **Treffer zählen:** Anzahl Adressen je Regel und Gruppe, ein- und ausgeschlossen sowie insgesamt – mit einer einzigen Abfrage.
+- **Update ohne Filterverlust:** Der bisherige Filter (Adresstyp, Ausschluss-Kennzeichen, zusätzlicher SQL-Filter) gilt unverändert weiter und wird im Editor als gleichwertige Regeln übernommen. Die alten Einstellungen bleiben für einen Rückroll erhalten. Unvollständige alte Einstellungen werden als ungültige Regel gezeigt, statt still alle Adressen zu synchronisieren; ein nicht lesbarer Filter stoppt den Sync, die Filterseite bleibt zur Reparatur erreichbar.
+- **Fortschrittsanzeige:** Dashboard und Synchronisation zeigen laufende Syncs mit Phase, Prozent, «Postfach x von y», angelegten/gelöschten Kontakten und Fehlern. Läufe über die Kommandozeile erscheinen als «Ein Lauf ist aktiv».
+- Dokumentation: Adressfilter und Fortschrittsanzeige beschrieben, Screenshots Cobra CRM neu.
+
 ## 0.5.1 – 22.11.2026
 
 - **Oberfläche:** Kachelraster fest zweispaltig mit gleich hohen Kacheln – auf breiten Bildschirmen keine leere dritte Spalte mehr (Dashboard, Cobra CRM, Microsoft 365, Einstellungen). Unter 900 px eine Spalte.

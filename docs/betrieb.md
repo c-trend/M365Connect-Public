@@ -20,6 +20,11 @@ Das **Dashboard** zeigt auf einen Blick, ob der Sync läuft, wann der nächste L
 Kontakte verwaltet werden und wie die letzten Läufe ausgegangen sind. Oben rechts steht der Gesamtzustand
 («Sync aktiv», «Freigabe nötig», «Letzter Sync fehlgeschlagen» …).
 
+Während ein Lauf im Dienst arbeitet, zeigen Dashboard und **Synchronisation → Übersicht** den **Fortschritt**: Phase,
+Prozent, «Postfach x von y» mit dem aktuellen Postfach, Anzahl Cobra-Adressen und Kontakte, angelegte und gelöschte
+Kontakte sowie Postfächer mit Fehlern. Nach dem Lauf werden Status und «Letzte Läufe» neu geladen. Läufe über die
+Kommandozeile erscheinen nur als «Ein Lauf ist aktiv».
+
 Unter **Synchronisation → Übersicht** stehen alle Läufe mit Meldung. **Synchronisation → Postfächer** zeigt den Stand
 je Postfach.
 
