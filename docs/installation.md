@@ -159,7 +159,7 @@ jederzeit, welche Kontakte entstehen würden.
 |---|---|
 | Automatisch synchronisieren | vorerst **aus** |
 | Intervall | 15–60 Minuten; unveränderte Postfächer werden übersprungen |
-| Täglicher Vollabgleich | ein, z. B. 02:00 |
+| Geplanter Vollabgleich | ein, alle Wochentage oder z. B. nur Mo und Do, 02:00 |
 | Kategorie | «Cobra Sync» – an ihr erkennt das Programm seine eigenen Kontakte |
 | Anzeigename | `{Firma} - {Person}` |
 | Landesvorwahl und Mobil-Präfixe | für die Schweiz `+41` und `+4174 … +4179` |

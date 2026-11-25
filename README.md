@@ -33,7 +33,7 @@ Nummer. Das Programm läuft als Windows-Dienst beim Kunden und wird über eine W
 | **CRM strikt lesend** | Cobra CRM wird über ein eigenes Leselogin mit Leserecht auf genau eine Tabelle gelesen. Im CRM wird nie etwas geändert. |
 | **Nur eigene Kontakte** | Angelegt, geändert und gelöscht werden ausschliesslich die selbst angelegten Kontakte mit der eigenen Kategorie. Private Kontakte der Benutzer bleiben unberührt – ausser sie sollen per Opt-in-Schalter eine eigene Kategorie erhalten. |
 | **Trockenlauf und Löschschutz** | Jeder Lauf lässt sich vorher ohne Schreiben prüfen. Grosse Löschmengen werden zurückgehalten, bis sie ausdrücklich freigegeben sind. |
-| **Zeitplan** | Automatischer Abgleich im Intervall und ein täglicher Vollabgleich. Unveränderte Postfächer werden übersprungen. |
+| **Zeitplan** | Automatischer Abgleich im Intervall und ein geplanter Vollabgleich an wählbaren Wochentagen. Unveränderte Postfächer werden übersprungen. |
 | **Postfachauswahl** | Alle Postfächer, alle ausser einzelnen oder nur gewählte – neue Benutzer auf Wunsch automatisch. |
 | **Einrichtungsassistenten** | App-Registrierung in Entra ID mit Zertifikat und Cobra-Leselogin werden geführt eingerichtet. |
 | **Updates mit Rückroll** | Signierte Updates direkt aus der Oberfläche. Startet eine neue Version nicht, wird die vorherige samt Datenbank wiederhergestellt. |

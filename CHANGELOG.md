@@ -2,6 +2,15 @@
 
 Ab 0.3.4 sind Versionen regulär; Beta sind nur noch Versionen mit Zusatz (z. B. `1.2.0-beta.1`). Frühere 0.x-Versionen waren Beta. Pakete und Prüfdateien: [Releases](https://github.com/c-trend/M365Connect-Public/releases).
 
+## 0.6.1 – 25.11.2026
+
+- **Vollabgleich an wählbaren Wochentagen** (Synchronisation → Einstellungen → Zeitplan): «Geplanter Vollabgleich» läuft nur an den gewählten Tagen (z. B. Montag und Donnerstag). Nach dem Update sind alle Tage gewählt – das Verhalten bleibt gleich.
+- **Ein Takt bestimmt:** Ist der geplante Vollabgleich aktiv, entscheiden allein die gewählten Tage. Die Einstellung unter «Schutz» heisst neu «Vollabgleich ohne Zeitplan» und gilt nur, wenn kein Vollabgleich geplant ist. Fällt ein Termin aus (z. B. Server aus), holt der normale Lauf ihn spätestens einen Tag nach der grössten Lücke zwischen den gewählten Tagen nach.
+- Läuft zur geplanten Zeit gerade ein anderer Sync, wird der Vollabgleich kurz danach wiederholt, statt bis zum nächsten Termin auszufallen. Schlägt er fehl (z. B. Microsoft 365 kurz nicht erreichbar), wird er nach dem eingestellten Intervall erneut versucht.
+- Liegt die Uhrzeit in der Stunde, die bei der Umstellung auf Sommerzeit wegfällt (z. B. 02:30), läuft der Vollabgleich an diesem Tag um 03:00.
+- **Behoben:** Die Uhrzeit des Vollabgleichs liess sich nicht speichern, wenn im Zeitfeld nur die Stunde eingetippt wurde («Uhrzeit des Vollabgleichs im Format HH:mm angeben»). Die Uhrzeit wird jetzt mit zwei Auswahllisten (Stunde, Minute) im 24-Stunden-Format gewählt.
+- Fehler beim Speichern der Sync-Einstellungen erscheinen als Meldung auf der Seite.
+
 ## 0.6.0 – 25.11.2026
 
 - **Adressfilter als Regeleditor** (Cobra CRM → Feldzuordnung & Filter): zwei Blöcke **Einschliessen** und **Ausschliessen** (Ausschliessen gewinnt immer), verschachtelbare Gruppen mit UND/ODER, Bedingungen für Text/Auswahl, Zahl, Datum (fest oder relativ, bei jedem Lauf neu berechnet) und Ja/Nein sowie eigene SQL-Bedingungen. Der Filter steht als lesbarer Satz über dem Editor und in der Cobra-Übersicht.
